@@ -1,9 +1,9 @@
-package org.lushplugins.projectname;
+package org.lushplugins.configurablenpcs;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ProjectName extends JavaPlugin {
-    private static ProjectName plugin;
+public final class ConfigurableNpCs extends JavaPlugin {
+    private static ConfigurableNpCs plugin;
 
     @Override
     public void onLoad() {
@@ -20,7 +20,7 @@ public final class ProjectName extends JavaPlugin {
         // Disable implementation
     }
 
-    public static ProjectName getInstance() {
+    public static ConfigurableNpCs getInstance() {
         return plugin;
     }
 }
