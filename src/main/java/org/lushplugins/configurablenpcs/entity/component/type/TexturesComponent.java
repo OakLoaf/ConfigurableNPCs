@@ -23,11 +23,11 @@ public class TexturesComponent implements EntityComponent {
 
         @Override
         public void serialize(ConfigurationSection config, TextureProperty value) {
-            config.set("value", value.getValue());
+            config.set("textures.value", value.getValue());
 
             String signature = value.getSignature();
             if (signature != null) {
-                config.set("signature", signature);
+                config.set("textures.signature", signature);
             }
         }
     };

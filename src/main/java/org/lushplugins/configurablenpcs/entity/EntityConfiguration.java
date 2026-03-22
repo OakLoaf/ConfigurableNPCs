@@ -48,7 +48,7 @@ public record EntityConfiguration(EntityType type, EntityMeta meta, List<EntityC
     }
 
     public void serialize(ConfigurationSection config) {
-        config.set("type", type);
+        config.set("type", type.getName().toString());
 
         ConfigurationSection metaSection = config.createSection("meta");
         ConfigurableNPCs.metaSerializers().serialize(meta, metaSection);
