@@ -17,6 +17,6 @@ public class ComponentField extends Field<Component> {
 
     @Override
     public void serialize(ConfigurationSection config, Component value) {
-        config.set(name, Components.toString(value));
+        config.set(name, value != null ? Components.toString(value) : null);
     }
 }
