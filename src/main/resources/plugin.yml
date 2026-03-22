@@ -1,5 +1,0 @@
-name: ConfigurableNpCs
-version: ${project.version}
-main: org.lushplugins.configurablenpcs.ConfigurableNpCs
-api-version: '1.21'
-github-repo: OakLoaf/ConfigurableNpCs

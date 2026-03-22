@@ -1,1 +1,1 @@
-rootProject.name = "ConfigurableNpCs"
+rootProject.name = "ConfigurableNPCs"
