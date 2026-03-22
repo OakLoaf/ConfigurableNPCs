@@ -21,12 +21,12 @@ public record EntityConfiguration(EntityType type, EntityMeta meta, List<EntityC
 
     public WrapperEntity createEntity(UUID uuid, int entityId) {
         EntityMeta meta = EntityMeta.createMeta(entityId, type);
-        this.meta.getMetadata().copyTo(meta.getMetadata());
 
         WrapperEntity entity;
         if (meta instanceof PlayerMeta) {
             // TODO: Make profile configurable
             entity = new WrapperPlayer(new UserProfile(uuid, ""), entityId);
+            meta = entity.getEntityMeta();
             ((WrapperPlayer) entity).setInTablist(false);
         } else if (meta instanceof LivingEntityMeta) {
             entity = new WrapperLivingEntity(entityId, uuid, type, meta);
@@ -34,6 +34,7 @@ public record EntityConfiguration(EntityType type, EntityMeta meta, List<EntityC
             entity = new WrapperEntity(entityId, uuid, type, meta);
         }
 
+        this.meta.getMetadata().copyTo(meta.getMetadata());
         components.forEach(component -> component.applyTo(entity));
 
         return entity;
