@@ -26,7 +26,7 @@ public interface EntityMetaSerializer<T extends EntityMeta> {
 
     default void castAndSerialize(ConfigurationSection config, EntityMeta meta) {
         //noinspection unchecked
-        deserialize(config, (T) meta);
+        serialize(config, (T) meta);
     }
 
     List<Field<?>> getFields();
