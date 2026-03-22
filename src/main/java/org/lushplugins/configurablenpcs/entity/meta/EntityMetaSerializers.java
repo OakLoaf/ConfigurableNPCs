@@ -39,7 +39,6 @@ public class EntityMetaSerializers {
 //        register(new EndermanSerializer());
         register(new EntitySerializer());
 //        register(new FallingBlockSerializer());
-//        register(new LargeFireballSerializer());
 //        register(new FireworkRocketSerializer());
 //        register(new FishingHookSerializer());
 //        register(new FoxSerializer());
@@ -49,12 +48,12 @@ public class EntityMetaSerializers {
 //        register(new GlowSquidSerializer());
 //        register(new GoatSerializer());
 //        register(new GuardianSerializer());
-//        register(new GhastSerializer());
 //        register(new HoglinSerializer());
 //        register(new HorseSerializer());
 //        register(new InteractionSerializer());
 //        register(new ItemDisplaySerializer());
 //        register(new ItemFrameSerializer());
+//        register(new LargeFireballSerializer());
 //        register(new LivingEntitySerializer());
 //        register(new LlamaSerializer());
 //        register(new MarkerSerializer());
@@ -81,8 +80,8 @@ public class EntityMetaSerializers {
 //        register(new SpiderSerializer());
 //        register(new StriderSerializer());
 //        register(new TextDisplaySerializer());
-//        register(new TntSerializer());
 //        register(new ThrownTridentSerializer());
+//        register(new TntSerializer());
 //        register(new TropicalFishSerializer());
 //        register(new TurtleSerializer());
 //        register(new VexSerializer());
