@@ -22,7 +22,7 @@ repositories {
 dependencies {
     // Dependencies
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly("com.github.retrooper:packetevents-spigot:2.11.3-SNAPSHOT")
+    compileOnly("com.github.retrooper:packetevents-spigot:2.12.0-SNAPSHOT")
     compileOnly("io.github.tofaa2:spigot:3.1.0-SNAPSHOT")
 
     // Libraries
