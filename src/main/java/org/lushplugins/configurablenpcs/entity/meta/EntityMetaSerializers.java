@@ -138,4 +138,8 @@ public class EntityMetaSerializers {
             serializers.put(type, serializer);
         }
     }
+
+    public Collection<EntityMetaSerializer<?>> values() {
+        return serializers.values();
+    }
 }
