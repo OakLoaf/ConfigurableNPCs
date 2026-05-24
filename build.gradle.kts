@@ -22,13 +22,13 @@ repositories {
 dependencies {
     // Dependencies
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly("com.github.retrooper:packetevents-spigot:2.11.3-SNAPSHOT")
-    compileOnly("io.github.tofaa2:spigot:3.1.0-SNAPSHOT")
+    compileOnly("com.github.retrooper:packetevents-spigot:2.12.2-SNAPSHOT")
+    compileOnly("io.github.tofaa2:spigot:3.2.3-SNAPSHOT")
 
     // Libraries
     implementation("org.lushplugins:LushLib:1.0.0")
-    implementation("org.mineskin:java-client:3.1.0-SNAPSHOT")
-    implementation("org.mineskin:java-client-jsoup:3.1.0-SNAPSHOT")
+    implementation("org.mineskin:java-client:3.2.5")
+    implementation("org.mineskin:java-client-jsoup:3.2.5")
 }
 
 java {
