@@ -96,7 +96,7 @@ public class EntityMetaSerializers {
 //        register(new ZombieVillagerSerializer());
     }
 
-    public Collection<EntityMetaSerializer<?>> getSerializersApplicableTo(Class<? extends EntityMeta> metaType) {
+    public List<EntityMetaSerializer<?>> getSerializersApplicableTo(Class<? extends EntityMeta> metaType) {
         List<EntityMetaSerializer<?>> serializers = new ArrayList<>();
 
         if (this.serializers.containsKey(metaType)) {
@@ -113,11 +113,11 @@ public class EntityMetaSerializers {
         return serializers;
     }
 
-    public Collection<EntityMetaSerializer<?>> getSerializersApplicableTo(EntityMeta meta) {
+    public List<EntityMetaSerializer<?>> getSerializersApplicableTo(EntityMeta meta) {
         return getSerializersApplicableTo(meta.getClass());
     }
 
-    public Collection<EntityMetaSerializer<?>> getSerializersApplicableTo(EntityType entityType) {
+    public List<EntityMetaSerializer<?>> getSerializersApplicableTo(EntityType entityType) {
         return getSerializersApplicableTo(EntityMeta.getMetaClass(entityType));
     }
 
