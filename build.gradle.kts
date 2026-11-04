@@ -26,7 +26,7 @@ dependencies {
     compileOnly("io.github.tofaa2:spigot:3.3.7-SNAPSHOT")
 
     // Libraries
-    implementation("org.lushplugins:LushLib:1.0.0")
+    implementation("org.lushplugins:LushLib:1.0.1")
     implementation("org.mineskin:java-client:3.2.6")
     implementation("org.mineskin:java-client-jsoup:3.2.6")
 }
